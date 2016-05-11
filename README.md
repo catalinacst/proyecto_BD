@@ -1,2 +1,2 @@
 # Base de Datos - Multas de Tránsito
-Proyecto Base de Datos
+Proyecto de Base de Datos
