@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMarcasTable extends Migration
+class CreateModelosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,12 @@ class CreateMarcasTable extends Migration
      */
     public function up()
     {
-        Schema::create('marcas', function (Blueprint $table) {
+        Schema::create('modelos', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('marca_id')->unsigned()->default(0);
+            $table->foreign('marca_id')->references('id')->on('marcas')->onDelete('cascade');
             $table->string('nombre')->default('');
-			$table->string('direccion')->default('');
+            $table->integer('potencia')->default(0);
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateMarcasTable extends Migration
      */
     public function down()
     {
-        Schema::drop('marcas');
+        Schema::drop('modelos');
     }
 }

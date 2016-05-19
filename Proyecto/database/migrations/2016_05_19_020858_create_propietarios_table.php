@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMarcasTable extends Migration
+class CreatePropietariosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,13 @@ class CreateMarcasTable extends Migration
      */
     public function up()
     {
-        Schema::create('marcas', function (Blueprint $table) {
+        Schema::create('propietarios', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre')->default('');
-			$table->string('direccion')->default('');
+            $table->string('apellidos')->default('');
+            $table->string('ciudad')->default('');
+            $table->string('direccion')->default('');
+            $table->date('fecha_nac');
             $table->timestamps();
         });
     }
@@ -27,6 +30,6 @@ class CreateMarcasTable extends Migration
      */
     public function down()
     {
-        Schema::drop('marcas');
+        Schema::drop('propietarios');
     }
 }
