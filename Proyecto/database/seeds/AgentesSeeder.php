@@ -23,5 +23,11 @@ class AgentesSeeder extends Seeder
           'apellidos' => 'Castro'
       ]);
 
+      for ($i=0; $i < 10; $i++) {
+        DB::table('agentes')->insert([
+            'nombre' => $faker->name,
+            'apellidos' => $faker->lastName
+        ]);
+      }
     }
 }

@@ -14,15 +14,16 @@ class MarcasSeeder extends Seeder
     {
 
       $faker = Faker::create();
+      $marcas = array('Mazda','Suzuki','Audi','BMW',
+              'Chevrolet', 'Dodge', 'Ford', 'Honda', 'Hyundai', 'Kia', 'Mercedes-Benz',
+              'Mitsubishi', 'Nissan', 'Renault', 'Toyota');
 
-      DB::table('marcas')->insert([
-          'nombre' => 'Mazda',
-          'direccion' => $faker->address,
-      ]);
-      
-      DB::table('marcas')->insert([
-          'nombre' => 'Suzuki',
-          'direccion' => $faker->address,
-      ]);
+      foreach ($marcas as $marcaIndividual) {
+        DB::table('marcas')->insert([
+            'nombre' => $marcaIndividual,
+            'direccion' => $faker->streetAddress,
+          ]);
+        }
+        
     }
 }
