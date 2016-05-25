@@ -33,20 +33,6 @@
                   </ul>
                 </li>
                 <li class="dropdown">
-                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modelos <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="{{route('modelos.create')}}"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Crear</a></li>
-                    <li><a href="{{route('modelos.index')}}"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Listar</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vehiculos <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="{{route('vehiculos.create')}}"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Crear</a></li>
-                    <li><a href="{{route('vehiculos.index')}}"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Listar</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Propietarios <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="{{route('propietarios.create')}}"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Crear</a></li>
@@ -63,14 +49,12 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agentes <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="{{route('agentes.create')}}"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Crear</a></li>
                     <li><a href="{{route('agentes.index')}}"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Listar</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Direcciones <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="{{route('direcciones.create')}}"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Crear</a></li>
                     <li><a href="{{route('direcciones.index')}}"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Listar</a></li>
                   </ul>
                 </li>
