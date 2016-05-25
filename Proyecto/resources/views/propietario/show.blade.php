@@ -38,7 +38,7 @@
 		<tbody>
 			<td>{{ $infraccion->id }}</td>
 			<td>{{ $infraccion->agente->nombre }}</td>
-			<td>{{ $infraccion->direccion }}</td>
+			<td>{{ $infraccion->direccion->carrera }}</td>
 			<td>{{ $infraccion->articulo }}</td>
 			<td>{{ $infraccion->valor_total }}</td>
 			<td><a href="{{ route('infracciones.edit', $infraccion->id) }}"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a></td>
