@@ -13,7 +13,7 @@ class PropietariosSeeder extends Seeder
     public function run()
     {
       $faker = Faker::create();
-      for($i=0; $i<10; $i++){
+      for($i=0; $i<15; $i++){
           DB::table('propietarios')->insert([
               'nombre' => $faker->firstName,
               'apellidos' => $faker->lastName,

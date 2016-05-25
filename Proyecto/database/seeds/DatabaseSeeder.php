@@ -15,6 +15,8 @@ class DatabaseSeeder extends Seeder
         $this->call(AgentesSeeder::class);
         $this->call(PropietariosSeeder::class);
         $this->call(DireccionesSeeder::class);
-
+        $this->call(ModelosSeeder::class);
+        $this->call(VehiculosSeeder::class);
+        $this->call(InfraccionesSeeder::class);
     }
 }
