@@ -49,8 +49,9 @@ class InfraccionController extends Controller
 
     public function edit(Infraccion $infraccion) {
     	$propietarios = Propietario::all();
-    	$modelos = Modelo::all();
-    	return view('infraccion.edit',  ['infraccion' => $infraccion, 'propietarios' => $propietarios, 'modelos' => $modelos]);
+    	$agentes = Agente::all();
+      $direcciones = Direccion::all();
+    	return view('infraccion.edit',  ['infraccion' => $infraccion, 'propietarios' => $propietarios, 'agentes' => $agentes, 'direcciones' => $direcciones]);
     }
 
     public function update(Infraccion $infraccion, Request $request) {
@@ -72,7 +73,7 @@ class InfraccionController extends Controller
 
     public function destroy(Infraccion $infraccion) {
         Infraccion::destroy($infraccion->id);
-        
+
         Session::flash('msg', 'Marca destruida exitosamente');
         return Redirect::to('/infracciones');
     }

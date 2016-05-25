@@ -3,7 +3,7 @@
 @section('content')
 
 	<h2>{{ $propietario->nombre }} <small>{{ $propietario->id + 1093228750 }}</small> </h2>
-	
+
 	<h3>Vehiculos</h3>
 	<hr>
 	<table class="table table-hover">
@@ -15,9 +15,9 @@
 		</thead>
 		@foreach($propietario->vehiculos as $vehiculo)
 		<tbody>
-			<td><a href="{{ route('vehiculos.show', $vehiculo->id) }}">{{ $vehiculo->id + 100 }}</a></td>
+			<td>{{ $vehiculo->id + 100 }}</td>
 			<td><a href="{{ route('modelos.show', $vehiculo->modelo->id) }}">{{ $vehiculo->modelo->nombre }}</a></td>
-			<td>{{ $vehiculo->created_at }}</td>
+			<td>{{ $vehiculo->fecha_matricula }}</td>
 			<td><a href="{{ route('vehiculos.edit', $vehiculo->id) }}"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a></td>
 		</tbody>
 		@endforeach

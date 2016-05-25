@@ -5,7 +5,7 @@
 
         <!-- CSS And JavaScript -->
         {!! Html::style('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css') !!}
-        
+
     </head>
 
     <body>
@@ -37,6 +37,13 @@
                   <ul class="dropdown-menu">
                     <li><a href="{{route('propietarios.create')}}"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Crear</a></li>
                     <li><a href="{{route('propietarios.index')}}"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Listar</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modelos <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{{route('modelos.create')}}"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Crear</a></li>
+                    <li><a href="{{route('modelos.index')}}"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Listar</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
